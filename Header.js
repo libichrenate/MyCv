@@ -17,6 +17,7 @@ nav{
     background: #2A2B2A;
     height: 80px;
     width: 100%;
+    z-index:1;
 }
 
 label.logo{
@@ -30,6 +31,7 @@ label.logo{
 nav ul{
     float: right;
     margin-right: 20px;
+    z-index:5;
 }
 
 nav ul li{
@@ -81,6 +83,10 @@ a:active{
 }
 
 @media(max-width:850px){
+    nav{
+        position:fixed;
+        top:0;
+    }
     .checkbtn{
         display:block;
     }
